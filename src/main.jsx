@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/storyGenerator/',
+        path: '/storyGenerator',
         element: <Home />,
       },
       {
