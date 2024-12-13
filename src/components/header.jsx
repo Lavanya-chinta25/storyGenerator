@@ -22,11 +22,11 @@ const header = () => {
         {/* Left Side */}
         <div className="flex-1 py-8 sm:py-10 md:py-16 lg:py-24 lg:pl-5">
           <div className="py-10 text-xl sm:text-2xl md:text-3xl lg:text-5xl text-white">
-          <p className="font-semibold text-xl sm:text-3xl md:text-5xl">
+          <p className="font-semibold text-xl sm:text-3xl md:text-4xl">
             Start Your Story Journey
           </p>
 
-          <p className="mt-6 text-lg sm:text-[24px] md:text-[40px] leading-snug sm:leading-snug md:leading-snug">
+          <p className="mt-6 text-lg sm:text-[24px] md:text-[32px] leading-snug sm:leading-snug md:leading-snug">
             Enhance your communication skills through captivating stories in diverse languages. Engage with narratives that inspire and empower your expression!
           </p>
           </div>
