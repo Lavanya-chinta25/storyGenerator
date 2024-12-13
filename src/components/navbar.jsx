@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="flex justify-center items-center w-full">
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center justify-center gap-5 text-[18px] font-medium">
-          <NavLink to="/storGenerator/">
+          <NavLink to="/storGenerator">
             <li className="pt-5 pb-1">HOME</li>
             <hr className="border-none outline-none h-[2.75px] bg-primary w-3/5 margin-auto hidden" />
           </NavLink>
@@ -46,7 +46,7 @@ const Navbar = () => {
       {showMenu && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md z-10">
           <ul className="flex flex-col items-center gap-5 py-3 text-lg font-medium">
-            <NavLink to="/storGenerator/" onClick={() => setShowMenu(false)}>
+            <NavLink to="/storGenerator" onClick={() => setShowMenu(false)}>
               <li className="pt-3 pb-2">HOME</li>
             </NavLink>
             <NavLink to="/storGenerator/mythos" onClick={() => setShowMenu(false)}>
