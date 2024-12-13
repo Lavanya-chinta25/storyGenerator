@@ -44,7 +44,7 @@ const themes = () => {
 
       <button
         className="px-4 py-2 bg-primary mx-auto text-white rounded transform transition-all duration-300 hover:bg-primary-dark hover:scale-105"
-        onClick={() => navigate('/storyGenerator/mythos')}
+        onClick={() => navigate('/mythos')}
       >
         Select Theme
       </button>

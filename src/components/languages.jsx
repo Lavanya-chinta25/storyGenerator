@@ -41,7 +41,7 @@ const languages = () => {
       
       <button
         className="px-4 py-2 md:px-8 md:py-3 lg:px-4 lg:py-2 bg-primary text-white rounded-lg transform hover:scale-105 transition duration-300 ease-in-out"
-        onClick={() => navigate('/storyGenerator/mythos')}
+        onClick={() => navigate('/mythos')}
       >
         Select Language
       </button>

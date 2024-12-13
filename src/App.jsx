@@ -9,14 +9,15 @@ import Footer from './components/footer';
 
 const App = () => {
   return (
-    <div className='mx-4 sm:mx-[10%]'>
+    <div className="mx-4 sm:mx-[10%]">
       <Navbar />
       <Routes>
-        <Route path="/storyGenerator/" element={<Home />} />
-        <Route path="/storyGenerator/mythos" element={<Mythos />} />
-        <Route path="/storyGenerator/about" element={<About />} />
-        <Route path="/storyGenerator/contact" element={<Contact />} />
-        <Route path="*" element={<Navigate to="/storyGenerator/" />} />
+        {/* Use relative paths without base during development */}
+        <Route path="/" element={<Home />} />
+        <Route path="/mythos" element={<Mythos />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </div>

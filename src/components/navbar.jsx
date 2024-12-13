@@ -13,19 +13,19 @@ const Navbar = () => {
       <nav className="flex justify-center items-center w-full">
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center justify-center gap-5 text-[18px] font-medium">
-          <NavLink to="/storyGenerator/">
+          <NavLink to="/">
             <li className="pt-5 pb-1">HOME</li>
             <hr className="border-none outline-none h-[2.75px] bg-primary w-3/5 margin-auto hidden" />
           </NavLink>
-          <NavLink to="/storyGenerator/mythos">
+          <NavLink to="/mythos">
             <li className="pt-5 pb-1">MYTHOS</li>
             <hr className="border-none outline-none h-[2.75px] bg-primary w-3/5 margin-auto hidden" />
           </NavLink>
-          <NavLink to="/storyGenerator/about">
+          <NavLink to="/about">
             <li className="pt-5 pb-1">ABOUT</li>
             <hr className="border-none outline-none h-[2.75px] bg-primary w-3/5 margin-auto hidden" />
           </NavLink>
-          <NavLink to="/storyGenerator/contact">
+          <NavLink to="/contact">
             <li className="pt-5 pb-1">CONTACT</li>
             <hr className="border-none outline-none h-[2.75px] bg-primary w-3/5 margin-auto hidden" />
           </NavLink>
@@ -46,16 +46,16 @@ const Navbar = () => {
       {showMenu && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md z-10">
           <ul className="flex flex-col items-center gap-5 py-3 text-lg font-medium">
-            <NavLink to="/storyGenerator/" onClick={() => setShowMenu(false)}>
+            <NavLink to="/" onClick={() => setShowMenu(false)}>
               <li className="pt-3 pb-2">HOME</li>
             </NavLink>
-            <NavLink to="/storyGenerator/mythos" onClick={() => setShowMenu(false)}>
+            <NavLink to="/mythos" onClick={() => setShowMenu(false)}>
               <li className="pt-3 pb-2">MYTHOS</li>
             </NavLink>
-            <NavLink to="/storyGenerator/about" onClick={() => setShowMenu(false)}>
+            <NavLink to="/about" onClick={() => setShowMenu(false)}>
               <li className="pt-3 pb-2">ABOUT</li>
             </NavLink>
-            <NavLink to="/storyGenerator/contact" onClick={() => setShowMenu(false)}>
+            <NavLink to="/contact" onClick={() => setShowMenu(false)}>
               <li className="pt-3 pb-2">CONTACT</li>
             </NavLink>
           </ul>
