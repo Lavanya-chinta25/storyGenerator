@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import  Home from './pages/home.jsx';
-import  Mythos  from './pages/mythos.jsx';
-import  About  from './pages/about.jsx';
-import  Contact  from './pages/contact.jsx';
+import Home from './pages/home.jsx';
+import Mythos from './pages/mythos.jsx';
+import About from './pages/about.jsx';
+import Contact from './pages/contact.jsx';
 
 // Define the routes
 const router = createBrowserRouter([
@@ -15,19 +15,19 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/storyGenerator/',
+        index: true, // Default route for '/storyGenerator/'
         element: <Home />,
       },
       {
-        path: '/storyGenerator/mythos',
+        path: 'mythos', // Relative path for child route
         element: <Mythos />,
       },
       {
-        path: '/storyGenerator/contact',
+        path: 'contact', // Relative path for child route
         element: <Contact />,
       },
       {
-        path: '/storyGenerator/about',
+        path: 'about', // Relative path for child route
         element: <About />,
       },
     ],
@@ -40,4 +40,3 @@ createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </StrictMode>
 );
-
