@@ -73,7 +73,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center ml-auto">
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className="text-3xl text-gray-700 focus:outline-none"
+            className="text-4xl text-gray-700 focus:outline-none"
             aria-label="Toggle menu"
           >
             {showMenu ? '×' : '≡'}
